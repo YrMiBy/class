@@ -4,15 +4,15 @@ class Task(): # Создание класса Task (задача)
         self.term = term
         self.status = status
 
-    def add_task(self, col): # функция добавление задачи
+    def add_task(self, col): #  добавление задачи
         print(f'{self.description} добавлена задача')
         self.description += 'не выполнена'
 
-    def completing_task(self): # функция отметки выполнения задачи
+    def completing_task(self): # отметка выполнения задачи
         print(f'{self.term} выполнена задача')
         self.description = 'выполнена'
 
-    def status_task(self): # функция статуса задачи
+    def status_task(self): #  статус задачи
         if self.description == 'выполнена':
             self.status = 'выполнена'
         else:
@@ -24,7 +24,6 @@ class Task(): # Создание класса Task (задача)
             if self.description == 'не выполнена':
                 col +=1
         print(col)
-
     
 
 
